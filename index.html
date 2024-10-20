@@ -188,13 +188,13 @@
                 $await(Jscex.Async.sleep(1000));
             }
         }));
-
+        const audio1 = document.querySelector('#audio')
         var runAsync = eval(Jscex.compile("async", function () {
             $await(seedAnimate());
             $await(growAnimate());
             $await(flowAnimate());
             $await(moveAnimate());
-            audio.play();
+            audio1.play();
             textAnimate().start();
 
             $await(jumpAnimate());

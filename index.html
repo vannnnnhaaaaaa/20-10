@@ -15,8 +15,8 @@
 
 </head>
     <body>
-        <audio id = "audio" src ="music/nhac.mp3" ></audio>
-          
+     <audio id="audio" src="music/nhac.mp3"></audio>
+       
 
         <div id="main">
             <div id="error">Trình duyệt của bạn không được hỗ trợ. Để được hỗ trợ liên hệ genzhoccode@gmail.com. Hoặc sử dụng (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)</div>
@@ -100,6 +100,7 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            document.getElementById('audio').play()
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
@@ -194,7 +195,7 @@
             $await(growAnimate());
             $await(flowAnimate());
             $await(moveAnimate());
-            audio1.play();
+            
             textAnimate().start();
 
             $await(jumpAnimate());

@@ -15,11 +15,7 @@
 
 </head>
     <body>
- 
-			<audio autoplay="autoplay" >
-					<source src="music/nhac.mp3" type="audio/mp3" />
-            </audio> 
-
+        <audio id = "audio" src ="music/nhac.mp3" ></audio>
           
 
         <div id="main">
@@ -27,13 +23,13 @@
              <div id="wrap">
                 <div id="text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
 			        <div id="code">
-			      <font color="#000" ><span class="say">Xin chào cô gái của anh!</span><br>
+			      <font color="#000" ><span class="say">Chúc mừng ngày Phụ nữ Việt Nam 20/10! 🌸</span><br>
 						<span class="say"> </span><br>
-						<span class="say">Anh thật sự không có quá nhiều lời hoa mỹ để dành tặng cho em trong ngày 20/10</span><br>
-						<span class="say">Chỉ mong rằng em luôn bình an, luôn yên vui và luôn hạnh phúc bên cạnh anh.</span><br>
-						<span class="say">Mãi yêu em và mãi bên cạnh em. </span><br>
+						<span class="say">Nhân ngày đặc biệt này, xin gửi lời chúc tốt đẹp nhất đến tất cả các bạn nữ. Chúc các bạn luôn xinh đẹp, mạnh mẽ và tự tin trên con đường của mình. </span><br>
+						<span class="say">Mong rằng mọi ước mơ của các bạn sẽ trở thành hiện thực, và luôn có niềm vui, hạnh phúc bên cạnh. Cảm ơn các bạn đã luôn tỏa sáng và lan tỏa yêu thương trong cuộc sống.</span><br>
+						<span class="say">Chúc một ngày 20/10 thật rực rỡ và tràn đầy niềm vui! 💐🌷🌻 </span><br>
                         <span class="say"><span class="space"><img width="100px" height="100px" src="image/tym.png" alt=""><br>
-                        <span class="say"><span class="space"></span> --Anh yêu em--</span>
+                        <span class="say"><span class="space"></span> --HP--</span>
 			  </font></p>
       </div>
                 </div>
@@ -198,7 +194,7 @@
             $await(growAnimate());
             $await(flowAnimate());
             $await(moveAnimate());
-
+            audio.play();
             textAnimate().start();
 
             $await(jumpAnimate());
